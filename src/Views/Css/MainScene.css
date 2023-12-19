@@ -1,0 +1,47 @@
+/* #hboxTopInsert {
+    -fx-background-color: darkgray;
+} */
+
+.center-object {
+    -fx-alignment: center; /* Center the content horizontally and vertically */
+}
+.white-background {
+    -fx-background-color: white;
+}
+
+.gray-background {
+    -fx-background-color: rgb(236, 234, 234);
+
+}
+
+
+.transparent {
+ 
+    -fx-background-color: rgbA(0, 0, 0,0);
+
+}
+
+.round-layout-search-bar {
+    -fx-border-radius: 50;
+    -fx-border-color: #D7D7D7;
+}
+
+.house-button {
+    -fx-background-color: transparent;
+    -fx-border-color: transparent; 
+    
+}
+
+.your-image-view {
+    -fx-border-width: 5;
+}
+
+
+
+
+
+
+
+/* .bold-text {
+    -fx-font-weight: bold;
+} */
