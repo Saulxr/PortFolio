@@ -1,10 +1,4 @@
-/* #hboxTopInsert {
-    -fx-background-color: darkgray;
-} */
 
-.center-object {
-    -fx-alignment: center; /* Center the content horizontally and vertically */
-}
 .white-background {
     -fx-background-color: white;
 }
@@ -15,9 +9,17 @@
 }
 
 
+.black-background {
+    -fx-background-color: black;
+    -fx-background-radius: 50px;
+
+}
+
+
 .transparent {
  
     -fx-background-color: rgbA(0, 0, 0,0);
+    -fx-border-color:transparent;
 
 }
 
@@ -26,14 +28,28 @@
     -fx-border-color: #D7D7D7;
 }
 
+
 .house-button {
     -fx-background-color: transparent;
-    -fx-border-color: transparent; 
+    -fx-background-insets: 0;
     
 }
 
-.your-image-view {
-    -fx-border-width: 5;
+.house-button:hover {
+    -fx-background-color:green;
+    -fx-effect: dropshadow(three-pass-box, #333, 0, 0, 0, 0);
+}
+
+.house-button:pressed {
+    -fx-background-color: red; /* Change the color on press */
+    -fx-effect: innershadow(gaussian, #222, 10, 0, 0, 0); /* Add an inner shadow on press */
+}
+
+
+.img-viewer {
+    -fx-border-size: 10px;
+ -fx-border-radius: 50px;
+
 }
 
 
@@ -41,7 +57,41 @@
 
 
 
+#myImageView {
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 0); /* Shadow effect on hover */
+}
 
-/* .bold-text {
-    -fx-font-weight: bold;
-} */
+#myImageView:hover {
+    -fx-opacity: 0.8; /* Adjust opacity on hover */
+}
+
+#myImageView:pressed {
+    -fx-opacity: 0.6; /* Adjust opacity on click */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 0); /* Shadow effect on click */
+}
+
+
+.my-icon:hover {
+    -fx-fill: #00ffbf3d; /* Blue color example on hover */
+    -fx-stroke: #302f2f; /* Highlight border color */
+}
+
+  
+
+  .my-icon:pressed {
+    -fx-fill: rgb(255, 255, 255); /* Blue color example */
+    -fx-stroke: #000000; /* Highlight border color */
+  }
+
+
+  .my-icon-container {
+    -fx-background-radius: 50%; /* Make it a circle */
+    -fx-padding: 5; /* Adjust padding as needed */
+}
+
+.my-icon-container:hover {
+    -fx-background-color: rgb(240, 169, 37);/*rgba(211, 211, 211, 0.3); Light gray highlight color with transparency */
+
+}
+
+

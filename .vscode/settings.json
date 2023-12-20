@@ -1,15 +1,24 @@
 {
     "java.project.sourcePaths": ["src"],
     "java.project.outputPath": "bin",
-    "java.project.referencedLibraries": [
-        "lib/**/*.jar",
-        "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx.base.jar",
-        "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx.controls.jar",
-        "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx.fxml.jar",
-        "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx.graphics.jar",
-        "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx.media.jar",
-        "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx.swing.jar",
-        "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx.web.jar",
-        "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx-swt.jar"
-    ]
+    "java.project.referencedLibraries": {
+        "include": [
+            "lib/**/*.jar",
+            "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\fontawesomefx-8.0.8-javadoc.jar",
+            "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\fontawesomefx-commons-9.1.2.jar",
+            "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\fontawesomefx-fontawesome-4.7.0-9.1.2.jar",
+            "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx.base.jar",
+            "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx.controls.jar",
+            "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx.fxml.jar",
+            "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx.graphics.jar",
+            "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx.media.jar",
+            "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx.swing.jar",
+            "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx.web.jar",
+            "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\javafx-swt.jar"
+        ],
+        "exclude": [
+            "c:\\Users\\pauln\\OneDrive\\Documents\\Desktop 2.0\\javafx-sdk-21.0.1\\lib\\fontawesomefx-fontawesome-4.7.0-9.1.2.jar",
+            "lib/fontawesomefx-fontawesome-4.7.0-9.1.2.jar"
+        ]
+    }
 }
