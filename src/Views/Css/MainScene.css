@@ -90,8 +90,27 @@
 }
 
 .my-icon-container:hover {
-    -fx-background-color: rgb(240, 169, 37);/*rgba(211, 211, 211, 0.3); Light gray highlight color with transparency */
+    -fx-background-color: rgba(218, 164, 63, 0.26);/*rgba(211, 211, 211, 0.3); Light gray highlight color with transparency */
 
+}
+
+.mySvg {
+    -fx-stroke: #c38484; /* Stroke color */
+    -fx-stroke-width: 1; /* Stroke width (adjust the value as needed) */
+}
+
+
+#svgContainer:hover #yourSvgId {
+    -fx-fill: #00ffbf3d; /* Blue color example on hover */
+    -fx-stroke: #2d977d3d; /* Highlight border color */
+    -fx-stroke-width: 1;
+}
+
+#svgContainer:pressed #yourSvgId {
+    -fx-fill: black; /* Blue color example */
+    -fx-stroke: rgba(130, 194, 70, 0.527); 
+    -fx-stroke-width: 1.5; 
+  
 }
 
 
