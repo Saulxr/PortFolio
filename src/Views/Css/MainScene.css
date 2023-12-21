@@ -114,3 +114,16 @@
 }
 
 
+
+#HboxBtnSide:hover #iconBtn {
+    -fx-fill: #00ffbf3d; /* Blue color example on hover */
+    -fx-stroke: #302f2f; /* Highlight border color */
+}
+
+
+#HboxBtnSide:pressed #iconBtn {
+    -fx-fill: rgb(255, 255, 255); /* Blue color example */
+    -fx-stroke: #000000; /* Highlight border color */
+}
+
+
