@@ -6,36 +6,40 @@ import javafx.application.Application;
 import javafx.fxml.FXMLLoader;
 import javafx.scene.Parent;
 import javafx.scene.Scene;
+import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
- 
+ // Import statements...
+
 public class App extends Application {
     @Override
     public void start(Stage primaryStage) {
-        
-  
-  Parent root;
-try {
-    root = FXMLLoader.load(getClass().getResource("/Views/MainScene.fxml"));
-    Scene scene = new Scene(root);
+        Parent root;
+        try {
+            root = FXMLLoader.load(getClass().getResource("/Views/MainScene.fxml"));
+            Scene scene = new Scene(root);
 
-  primaryStage.setTitle("DROP BUY!");
-        primaryStage.setScene(scene);
-        primaryStage.show();
-} catch (IOException e) {
-        e.printStackTrace();
-    
-}
-  
+            // Apply style class to text field
+            TextField textField = (TextField) scene.lookup("#textField"); // Replace with your actual ID
+            textField.getStyleClass().add("hoverable-textfield");
+
+            // Handle focus based on mouse events
+            textField.setOnMouseEntered(event -> textField.requestFocus());
+            textField.setOnMouseExited(event -> textField.getParent().requestFocus());
+
+            primaryStage.setTitle("DROP BUY!");
+            primaryStage.setScene(scene);
+            primaryStage.show();
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
     }
- 
+
     public static void main(String[] args) {
-      try {
-          launch(args);
-      } catch (Exception e) {
-          e.printStackTrace();
-          
-      }
-  }
-  
+        try {
+            launch(args);
+        } catch (Exception e) {
+            e.printStackTrace();
+        }
+    }
 }

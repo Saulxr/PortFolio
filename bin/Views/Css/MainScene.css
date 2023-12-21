@@ -9,9 +9,9 @@
 }
 
 
-.black-background {
-    -fx-background-color: black;
-    -fx-background-radius: 50px;
+.center-stage {
+    -fx-background-color: rgb(236, 234, 234);
+    -fx-background-radius: 50 0 0 50;
 
 }
 
@@ -20,8 +20,10 @@
  
     -fx-background-color: rgbA(0, 0, 0,0);
     -fx-border-color:transparent;
-
 }
+
+
+
 
 .round-layout-search-bar {
     -fx-border-radius: 50;
