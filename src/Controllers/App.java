@@ -9,7 +9,6 @@ import javafx.scene.Scene;
 import javafx.scene.control.TextField;
 import javafx.stage.Stage;
 
- // Import statements...
 
 public class App extends Application {
     @Override
@@ -21,7 +20,6 @@ public class App extends Application {
 
             // Apply style class to text field
             TextField textField = (TextField) scene.lookup("#textField"); // Replace with your actual ID
-            textField.getStyleClass().add("hoverable-textfield");
 
             // Handle focus based on mouse events
             textField.setOnMouseEntered(event -> textField.requestFocus());

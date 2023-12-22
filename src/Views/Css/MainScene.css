@@ -16,12 +16,19 @@
 }
 
 
+.transparent2 {
+ 
+    -fx-background-color: transparent;
+    -fx-border-color:transparent;
+    
+}
+
 .transparent {
  
     -fx-background-color: rgbA(0, 0, 0,0);
     -fx-border-color:transparent;
+    
 }
-
 
 
 
@@ -86,15 +93,68 @@
   }
 
 
-  .my-icon-container {
-    -fx-background-radius: 50%; /* Make it a circle */
-    -fx-padding: 5; /* Adjust padding as needed */
-}
-
+/* THREE BUTTONS ON THE SIDE */
 .my-icon-container:hover {
-    -fx-background-color: rgba(218, 164, 63, 0.26);/*rgba(211, 211, 211, 0.3); Light gray highlight color with transparency */
+    -fx-background-color: rgba(218, 164, 63, 0.26);
+    -fx-background-radius: 50%;
+}
+
+.my-icon-container:hover #house{
+    -fx-fill: rgb(107, 185, 44); /* Blue color example on hover */
+}
+
+.my-icon-container:hover #flame{
+    -fx-fill: red;
+}
+
+.my-icon-container:hover #gear{
+    -fx-fill: rgb(128, 165, 170); /* Blue color example */
 
 }
+
+.my-icon-container:pressed #house{
+    -fx-fill: rgb(255, 255, 255); /* Blue color example */
+    -fx-stroke: #000000; /* Highlight border color */
+  }
+
+  .my-icon-container:pressed #flame{
+    -fx-fill: rgb(255, 255, 255); /* Blue color example */
+    -fx-stroke: #000000; /* Highlight border color */
+  }
+
+  .my-icon-container:pressed #gear{
+    -fx-fill: rgb(255, 255, 255); /* Blue color example */
+    -fx-stroke: #000000; /* Highlight border color */
+  }
+/* THREE BUTTONS ON THE SIDE */
+
+
+/* THREE BUTTONS ON THE TOP RIGHT */
+
+.my-icon-container:pressed #cart{
+    -fx-fill: rgb(255, 255, 255); /* Blue color example */
+    -fx-stroke: #000000; /* Highlight border color */
+  }
+
+  .my-icon-container:pressed #bell{
+    -fx-fill: rgb(255, 255, 255); /* Blue color example */
+    -fx-stroke: #000000; /* Highlight border color */
+  }
+
+  .my-icon-container:pressed #hub{
+    -fx-fill: rgb(255, 255, 255); /* Blue color example */
+    -fx-stroke: #000000; /* Highlight border color */
+  }
+
+
+/**/
+.top-right-icons {
+    -fx-fill: rgb(255, 255, 255); /* Default fill color */
+    -fx-stroke: rgba(102, 67, 14, 0.952); /* Default border color */
+    -fx-cursor: hand; /* Optional: Change cursor to hand on hover */
+}
+  
+/* THREE BUTTONS ON THE TOP RIGHT */
 
 .mySvg {
     -fx-stroke: #c38484; /* Stroke color */
@@ -116,16 +176,37 @@
 }
 
 
-
+/* 
 #HboxBtnSide:hover #iconBtn {
-    -fx-fill: #00ffbf3d; /* Blue color example on hover */
-    -fx-stroke: #302f2f; /* Highlight border color */
+    -fx-fill: #00ffbf3d; 
+    -fx-stroke: #302f2f; 
+} */
+
+/*animaion*/
+
+
+.fire-icon {
+    -fx-fill: black;
 }
 
+.fire-icon-hover {
+    -fx-fill: firebrick;
+}
+
+/*animaion*/
 
 #HboxBtnSide:pressed #iconBtn {
     -fx-fill: rgb(255, 255, 255); /* Blue color example */
     -fx-stroke: #000000; /* Highlight border color */
 }
 
+
+.cartIcon {
+    -fx-fill: #007bff; /* Blue color for the icon */
+    -fx-size: 24px; /* Adjust the size as needed */
+}
+
+.cartIcon:hover {
+    -fx-fill: #0056b3; /* Darker blue color on hover */
+}
 
