@@ -16,9 +16,9 @@
 }
 
 
-.transparent2 {
+#nn {
  
-    -fx-background-color: transparent;
+    -fx-fill: transparent;
     -fx-border-color:transparent;
     
 }
@@ -210,3 +210,22 @@
     -fx-fill: #0056b3; /* Darker blue color on hover */
 }
 
+
+/* Card_Item_Style */
+
+/* Add a box shadow for a subtle shadow effect */
+.card-box {
+    -fx-background-color: white; /* Set background color */
+    -fx-border-radius: 10; /* Set border radius for rounded corners */
+    -fx-background-radius: 10; /* Set background radius for rounded corners */
+    -fx-padding: 10; /* Add padding for inner content */
+    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 5); /* Add a box shadow */
+}
+
+/* Add hover effect if needed */
+.card-box:hover {
+    -fx-background-color: #f0f0f0; /* Change background color on hover */
+}
+
+
+/* Card_Item_Style */

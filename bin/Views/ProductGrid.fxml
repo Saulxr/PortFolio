@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox fx:id="box" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="180.0" prefWidth="257.0" styleClass="card-box" stylesheets="@Css/MainScene.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CardController">
+   <children>
+      <HBox maxHeight="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="36.0" prefWidth="248.0">
+         <children>
+            <Label fx:id="Product_Name" alignment="TOP_LEFT" prefHeight="60.0" prefWidth="237.0" text=" Men's Shoes" textAlignment="JUSTIFY">
+               <font>
+                  <Font name="Haettenschweiler" size="18.0" />
+               </font>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+               <HBox.margin>
+                  <Insets top="4.0" />
+               </HBox.margin>
+            </Label>
+         </children>
+      </HBox>
+      <HBox alignment="CENTER" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="107.0" prefWidth="237.0">
+         <children>
+            <ImageView fx:id="Product_Img" fitHeight="110.0" fitWidth="224.0" pickOnBounds="true" styleClass="transparent">
+               <image>
+                  <Image url="@Img/shoes.png" />
+               </image>
+            </ImageView>
+         </children>
+      </HBox>
+      <HBox maxHeight="-Infinity" minHeight="-Infinity" prefHeight="40.0" prefWidth="237.0">
+         <children>
+            <Label fx:id="Product_Price" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="39.0" prefWidth="113.0" text="  N$ 700">
+               <font>
+                  <Font name="Verdana Pro Cond Black" size="12.0" />
+               </font>
+            </Label>
+            <HBox alignment="CENTER" prefHeight="29.0" prefWidth="132.0">
+               <children>
+                  <FontAwesomeIconView fill="#b9750f" glyphName="STAR" size="23">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fill="#b9750f" glyphName="STAR" layoutX="70.0" layoutY="51.0" size="23">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fill="#b9750f" glyphName="STAR" layoutX="81.0" layoutY="51.0" size="23">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fill="#b9750f" glyphName="STAR" layoutX="92.0" layoutY="51.0" size="23">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fill="#b9750f" glyphName="STAR" layoutX="103.0" layoutY="51.0" size="23">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+               <padding>
+                  <Insets bottom="3.0" />
+               </padding>
+            </HBox>
+         </children>
+         <VBox.margin>
+            <Insets />
+         </VBox.margin>
+      </HBox>
+   </children>
+</VBox>
