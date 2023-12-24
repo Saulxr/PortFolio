@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.image.Image?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+<VBox fx:id="box2" alignment="CENTER" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="223.0" prefWidth="169.0" styleClass="card-box" stylesheets="@Css/MainScene.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.CardVerticalController">
+   <children>
+      <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="222.0" prefWidth="161.0">
+         <children>
+            <HBox alignment="CENTER" prefHeight="171.0" prefWidth="158.0" AnchorPane.bottomAnchor="51.0" AnchorPane.leftAnchor="0.0" AnchorPane.rightAnchor="3.0" AnchorPane.topAnchor="0.0">
+               <children>
+                  <ImageView fx:id="Product_Img" fitHeight="149.0" fitWidth="140.0" nodeOrientation="INHERIT" pickOnBounds="true" preserveRatio="true">
+                     <image>
+                        <Image url="@Img/SchoolPumabag.png" />
+                     </image>
+                     <HBox.margin>
+                        <Insets bottom="1.0" left="1.0" right="1.0" top="1.0" />
+                     </HBox.margin>
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox layoutX="-13.0" layoutY="175.0" prefHeight="29.0" prefWidth="174.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0">
+               <children>
+                  <Label fx:id="Product_Name" prefHeight="16.0" prefWidth="113.0" text=" Men's Shoes ">
+                     <font>
+                        <Font name="Verdana Pro Cond Black" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets top="1.0" />
+                     </padding>
+                  </Label>
+                  <Label fx:id="Product_Price" prefHeight="29.0" prefWidth="58.0" text="N$300">
+                     <font>
+                        <Font name="Verdana Pro Cond Black" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets bottom="7.0" left="2.0" />
+                     </padding>
+                  </Label>
+               </children>
+            </HBox>
+            <HBox alignment="CENTER_LEFT" layoutX="21.0" layoutY="204.0" prefHeight="29.0" prefWidth="132.0" AnchorPane.bottomAnchor="1.0" AnchorPane.leftAnchor="1.0" AnchorPane.rightAnchor="1.0">
+               <children>
+                  <FontAwesomeIconView fill="#b9750f" glyphName="STAR" size="23">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fill="#b9750f" glyphName="STAR" layoutX="70.0" layoutY="51.0" size="23">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fill="#b9750f" glyphName="STAR" layoutX="81.0" layoutY="51.0" size="23">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fill="#b9750f" glyphName="STAR" layoutX="92.0" layoutY="51.0" size="23">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+                  <FontAwesomeIconView fill="#b9750f" glyphName="STAR" layoutX="103.0" layoutY="51.0" size="23">
+                     <HBox.margin>
+                        <Insets />
+                     </HBox.margin>
+                  </FontAwesomeIconView>
+               </children>
+               <padding>
+                  <Insets bottom="3.0" left="2.0" />
+               </padding>
+            </HBox>
+         </children>
+      </AnchorPane>
+   </children>
+</VBox>

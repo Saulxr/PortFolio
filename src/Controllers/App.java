@@ -22,12 +22,15 @@ public class App extends Application {
             // Apply style class to text field
             TextField textField = (TextField) scene.lookup("#textField"); // Replace with your actual ID
             ScrollPane scrollPane = (ScrollPane) scene.lookup("#Scroll_P"); // Replace with your actual ID
+            ScrollPane scrollPane2 = (ScrollPane) scene.lookup("#Scrollp"); // Replace with your actual ID
 
             // Handle focus based on mouse events
             textField.setOnMouseEntered(event -> textField.requestFocus());
             textField.setOnMouseExited(event -> textField.getParent().requestFocus());
             scrollPane.setOnMouseEntered(event -> scrollPane.requestFocus());
             scrollPane.setOnMouseExited(event -> scrollPane.getParent().requestFocus());
+            scrollPane2.setOnMouseEntered(event -> scrollPane2.requestFocus());
+            scrollPane2.setOnMouseExited(event -> scrollPane2.getParent().requestFocus());
 
 
             primaryStage.setTitle("DROP BUY!");
