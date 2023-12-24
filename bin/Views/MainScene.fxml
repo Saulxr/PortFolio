@@ -110,9 +110,9 @@
             </Label>
             <ScrollPane fx:id="Scroll_P" pannable="true" prefHeight="236.0" prefWidth="916.0" vbarPolicy="NEVER">
                <content>
-                  <AnchorPane prefHeight="236.0" prefWidth="1121.0" styleClass="white-background" stylesheets="@Css/MainScene.css">
+                  <AnchorPane prefHeight="236.0" prefWidth="1121.0" style="-fx-background-color: transparent;" stylesheets="@Css/MainScene.css">
                      <children>
-                        <HBox fx:id="cardLayout" alignment="CENTER_LEFT" layoutX="20.0" layoutY="6.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="202.0" prefWidth="1600.0" spacing="20.0" styleClass="white-background" stylesheets="@Css/MainScene.css" />
+                        <HBox fx:id="cardLayout" alignment="CENTER_LEFT" layoutX="12.0" layoutY="6.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="190.0" prefWidth="1491.0" spacing="20.0" style="-fx-background-color: transprent;" stylesheets="@Css/MainScene.css" />
                      </children>
                   </AnchorPane>
                </content>
