@@ -6,19 +6,18 @@
     "configurations": [
         {
             "type": "java",
+            "name": "Current File",
+            "request": "launch",
+            "mainClass": "${file}"
+        },
+        {
+            "type": "java",
             "name": "App",
             "request": "launch",
             "mainClass": "Controllers.App",
             "projectName": "EMALL_8996775c",
             "vmArgs": "--module-path \"C:/Users/pauln/OneDrive/Documents/Desktop 2.0/javafx-sdk-21.0.1/lib\" --add-modules javafx.controls,javafx.fxml"
 
-        },
-        {
-            "type": "java",
-            "name": "Current File",
-            "request": "launch",
-            "mainClass": "${file}"
         }
-        
     ]
 }

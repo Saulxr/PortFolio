@@ -19,7 +19,7 @@
 
 <BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="980.0" styleClass="white-background" stylesheets="@Css/MainScene.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainSceneController">
    <left>
-      <AnchorPane prefHeight="613.0" prefWidth="64.0" styleClass="white-background" stylesheets="@Css/MainScene.css" BorderPane.alignment="CENTER">
+      <AnchorPane prefHeight="635.0" prefWidth="47.0" styleClass="white-background" stylesheets="@Css/MainScene.css" BorderPane.alignment="CENTER">
          <children>
             <VBox layoutX="6.0" layoutY="192.0" prefHeight="200.0" prefWidth="62.0" spacing="20.0" styleClass="white-background" stylesheets="@Css/MainScene.css" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="2.0">
                <children>
@@ -112,7 +112,7 @@
                <content>
                   <AnchorPane prefHeight="236.0" prefWidth="1121.0" style="-fx-background-color: transparent;" stylesheets="@Css/MainScene.css">
                      <children>
-                        <HBox fx:id="cardLayout" alignment="CENTER_LEFT" layoutX="12.0" layoutY="6.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="190.0" prefWidth="1491.0" spacing="20.0" style="-fx-background-color: transprent;" stylesheets="@Css/MainScene.css" />
+                        <HBox fx:id="cardLayout" alignment="CENTER_LEFT" layoutX="12.0" layoutY="6.0" maxHeight="-Infinity" minHeight="-Infinity" prefHeight="190.0" prefWidth="1491.0" spacing="80.0" style="-fx-background-color: transprent;" stylesheets="@Css/MainScene.css" />
                      </children>
                   </AnchorPane>
                </content>

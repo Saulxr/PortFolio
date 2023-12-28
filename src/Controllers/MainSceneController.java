@@ -13,6 +13,8 @@ import javafx.scene.control.TextField;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
+//import javafx.scene.control.ScrollPane;
+
 
 
 
@@ -26,16 +28,24 @@ public class MainSceneController implements Initializable {
     public List<CardModel> recentlyViewed;
     private List<CardModel> recommandedCardModels;
 
-    private MyListener myListener;
+   // private MyListener myListener;
 
 
     @FXML
     private TextField textField;
     //Setting Up Chosen Product
+    // Setting Up Chosen Product
     public void setChosenProd(CardModel clickedModel) {
-        recentlyViewed.add(clickedModel); // Simply add the clicked item to the list
-        loadRecentlyViewed(); // Update the UI
+        recentlyViewed.add(0, clickedModel); // Add the new element to the beginning
+    
+        if (recentlyViewed.size() > 4) {
+            recentlyViewed.remove(recentlyViewed.size() - 1); // Remove the last element if the list exceeds 5 items
+        }
+    
+        loadRecentlyViewed();
     }
+    
+
 
     private void loadRecentlyViewed() {
         cardLayout.getChildren().clear(); // Clear existing UI elements
@@ -125,12 +135,12 @@ public class MainSceneController implements Initializable {
 
 
         try {
-            for (CardModel cardModel : recommandedCardModels) {
-                System.out.println("Product Name: " + cardModel.getProduct_Name());
-                System.out.println("Product Image: " + cardModel.getProduct_Img());
-                System.out.println("Product Price: " + cardModel.getProduct_Price());
-                System.out.println("------------------------------");
-            }
+            // for (CardModel cardModel : recommandedCardModels) {
+            //     System.out.println("Product Name: " + cardModel.getProduct_Name());
+            //     System.out.println("Product Image: " + cardModel.getProduct_Img());
+            //     System.out.println("Product Price: " + cardModel.getProduct_Price());
+            //     System.out.println("------------------------------");
+            // }
       
 
             //TESTING
@@ -145,7 +155,7 @@ public class MainSceneController implements Initializable {
                 prodBox.getStyleClass().add("card-box");
                 CardVerticalController cardVController = fxmlLoader.getController();
                 cardVController.setMainSceneController(this); // Pass reference to MainSceneController
-                System.out.println(recommanded);
+                //System.out.println(recommanded);
                 cardVController.setProd(recommanded);
     
                 if (column == 7) {

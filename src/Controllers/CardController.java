@@ -24,7 +24,7 @@ public class CardController {
    // private String [] colours = {"B9E5FF","BDB2FE","FB9AA8","FF5856"};
     
    public void setProd(CardModel cardModel){
-          System.out.println("hjdsssyhhhhUUUU");
+          //System.out.println("hjdsssyhhhhUUUU");
         Image pImage= new Image(getClass().getResourceAsStream(cardModel.getProduct_Img()));
         
         Product_Img.setImage(pImage);
