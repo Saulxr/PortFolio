@@ -63,7 +63,7 @@ public class MainSceneController implements Initializable {
                 System.out.println(recommanded);
                 cardVController.setProd(recommanded);
 
-                if(column == 6) {
+                if(column == 7) {
                     column =0;
                     row++;
                 }
@@ -137,6 +137,38 @@ public class MainSceneController implements Initializable {
         model1.setProduct_Img("/Views/Img/Hoodie.png");
         model1.setProduct_Price("N$300");
         ls.add(model1);
+        
+                
+        model1 = new CardModel();
+        model1.setProduct_Name("Desk");
+        model1.setProduct_Img("/Views/Img/desk.png");
+        model1.setProduct_Price("N$800");
+        ls.add(model1);
+
+        model1 = new CardModel();
+        model1.setProduct_Name("Gaming PC");
+        model1.setProduct_Img("/Views/Img/GamingHub.png");
+        model1.setProduct_Price("N$300");
+        ls.add(model1);
+
+        model1 = new CardModel();
+        model1.setProduct_Name("Keyboard");
+        model1.setProduct_Img("/Views/Img/Keyboard.png");
+        model1.setProduct_Price("N$5000");
+        ls.add(model1);
+
+        
+        model1 = new CardModel();
+        model1.setProduct_Name("Laptop");
+        model1.setProduct_Img("/Views/Img/Laptop.png");
+        model1.setProduct_Price("N$8000");
+        ls.add(model1);
+         
+        model1 = new CardModel();
+        model1.setProduct_Name("Phone Cases");
+        model1.setProduct_Img("/Views/Img/Phone.png");
+        model1.setProduct_Price("N$150");
+        ls.add(model1);   
 
         model1 = new CardModel();
         model1.setProduct_Name("Tv");
@@ -144,6 +176,18 @@ public class MainSceneController implements Initializable {
         model1.setProduct_Price("N$5000");
         ls.add(model1);
 
+             
+        model1 = new CardModel();
+        model1.setProduct_Name("Laptop Stand");
+        model1.setProduct_Img("/Views/Img/LaptopStand.png");
+        model1.setProduct_Price("N$8000");
+        ls.add(model1);
+         
+        model1 = new CardModel();
+        model1.setProduct_Name("Monitor");
+        model1.setProduct_Img("/Views/Img/Monitor.png");
+        model1.setProduct_Price("N$150");
+        ls.add(model1);   
         
         model1 = new CardModel();
         model1.setProduct_Name("Laptop");

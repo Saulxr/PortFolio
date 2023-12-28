@@ -31,7 +31,7 @@ public class CardController {
         Product_Name.setText(cardModel.getProduct_Name());
         Product_Price.setText(cardModel.getProduct_Price());
           
-       // box.setStyle("-fx-background-color: #" + (colours[(int)(Math.random()*colours.length)]));
+        box.setStyle("-fx-background-color: #" + (colours[(int)(Math.random()*colours.length)]));
 
     }
 

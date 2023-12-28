@@ -31,7 +31,7 @@ public class CardVerticalController {
         Product_Name.setText(cardModel.getProduct_Name());
         Product_Price.setText(cardModel.getProduct_Price());
           
-        // box2.setStyle("-fx-background-color: #" + (colours[(int)(Math.random()*colours.length)]));
+         box2.setStyle("-fx-background-color: #" + (colours[(int)(Math.random()*colours.length)]));
 
     }
 
