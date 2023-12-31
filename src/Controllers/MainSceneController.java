@@ -9,11 +9,13 @@ import javafx.fxml.FXML;
 import javafx.fxml.FXMLLoader;
 import javafx.fxml.Initializable;
 import javafx.geometry.Insets;
+import javafx.scene.Parent;
 import javafx.scene.control.TextField;
+import javafx.scene.layout.AnchorPane;
+import javafx.scene.layout.BorderPane;
 import javafx.scene.layout.GridPane;
 import javafx.scene.layout.HBox;
 import javafx.scene.layout.VBox;
-//import javafx.scene.control.ScrollPane;
 
 
 
@@ -28,13 +30,16 @@ public class MainSceneController implements Initializable {
     public List<CardModel> recentlyViewed;
     private List<CardModel> recommandedCardModels;
 
-   // private MyListener myListener;
-
+        
+    @FXML
+    private AnchorPane tert;
 
     @FXML
     private TextField textField;
+
+    @FXML
+    private BorderPane mainBorderPane;
     //Setting Up Chosen Product
-    // Setting Up Chosen Product
     public void setChosenProd(CardModel clickedModel) {
         recentlyViewed.add(0, clickedModel); // Add the new element to the beginning
     
@@ -44,62 +49,49 @@ public class MainSceneController implements Initializable {
     
         loadRecentlyViewed();
     }
-    
 
+   
 
     private void loadRecentlyViewed() {
-        cardLayout.getChildren().clear(); // Clear existing UI elements
+                 
+          cardLayout.getChildren().clear(); // Clear existing UI elements
         for (CardModel model : recentlyViewed) {
             FXMLLoader fxmlLoader = new FXMLLoader();
             fxmlLoader.setLocation(getClass().getResource("/Views/ProductGrid.fxml"));
             VBox cardBox;
             try {
                 cardBox = fxmlLoader.load();
-                cardBox.getStyleClass().add("card-box");
+                //cardBox.getStyleClass().add("card-box");
                 CardController cardController = fxmlLoader.getController();
+                cardController.setMainSceneController(this); // Pass reference to MainSceneController
                 cardController.setProd(model);
-                cardLayout.getChildren().add(cardBox);
+                 cardLayout.getChildren().add(cardBox);
             } catch (IOException e) {
                 e.printStackTrace();
             }
         }
     }
 
-    //     public void setChosenProd2(CardModel cardModel)  {
-    //             FXMLLoader fxmlLoader = new FXMLLoader();
-    //             fxmlLoader.setLocation(getClass().getResource("/Views/ProductGrid.fxml"));
-    //             VBox cardBox;
-    //             try {
-    //                 cardBox = fxmlLoader.load();
-    //                 cardBox.getStyleClass().add("card-box");
-    //                 CardController cardController = fxmlLoader.getController();
-    //                 cardController.setProd(cardModel);
-    //                 cardLayout.getChildren().add(cardBox);
-    //             } catch (IOException e) {
-    //                 // TODO Auto-generated catch block
-    //                 e.printStackTrace();
-    //             }
-      
-    // };
-    //End Of Setting Up Product
+    public void naG() {
+        FXMLLoader loader = new FXMLLoader(getClass().getResource("/Views/AboutProduct.fxml"));
+        try {
+            Parent root = (VBox) loader.load();
+    
+            // Ensure mainBorderPane is not null
+            
+            if (tert != null) {
+                mainBorderPane.setCenter(root);
+                System.out.println("Center set to AboutProduct.fxml");
+            } else {
+                System.out.println("mainBorderPane is null");
+            }
+        } catch (IOException e) {
+            e.printStackTrace();
+        }
+    }
+    
 
-          //Setting Up Dynamic Prod
-       
-    //    public void addToRecentlyViewed(CardModel item) {
-    //      recentlyViewed.add(item);
    
-    //        // Optionally, you can limit the size of the list to keep only the last N items
-    //        int maxSize = 5; // Adjust the size as needed
-    //        if (recentlyViewed.size() > maxSize) {
-    //            recentlyViewed = recentlyViewed.subList(0, 2);
-    //        }
-   
-    //        // Call a method to update the UI with the new recentlyViewed list
-    //    }
-       
-    //    //End Of Setting Up Dynamic Prod
-
-
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
        
@@ -107,46 +99,11 @@ public class MainSceneController implements Initializable {
        recommandedCardModels = new ArrayList<>(recommandedCardModels()); // Initialize the list first
        int column =0;
        int row =1;
-
-
-        //  myListener = new MyListener() {
-        //            @Override
-        //            public void onClickListener(CardModel cardModel) {
-        //                setChosenFruit();
-        //            }
-
-              
-        //        };
-
-    //    //Setting Up Dynamic Prod
-       
-    //    @Override
-    //    public void initialize(URL location, ResourceBundle resources) {
-    //            setChosenFruit(fruits.get(0));
-    //            myListener = new MyListener() {
-    //                @Override
-    //                public void onClickListener(Fruit fruit) {
-    //                    setChosenFruit(fruit);
-    //                }
-    //            };
-    //        }
-    //    //End Of Setting Up Dynamic Prod
-
-
+   
+                     
+   
 
         try {
-            // for (CardModel cardModel : recommandedCardModels) {
-            //     System.out.println("Product Name: " + cardModel.getProduct_Name());
-            //     System.out.println("Product Image: " + cardModel.getProduct_Img());
-            //     System.out.println("Product Price: " + cardModel.getProduct_Price());
-            //     System.out.println("------------------------------");
-            // }
-      
-
-            //TESTING
-           // setChosenProd();
-            //END TESTING
-      
 
             for (CardModel recommanded : recommandedCardModels) {
                 FXMLLoader fxmlLoader = new FXMLLoader();
@@ -172,6 +129,7 @@ public class MainSceneController implements Initializable {
             e.printStackTrace();
         }
     }
+ 
 
     public List<CardModel> recentlyViewed() {
         List<CardModel> ls = new ArrayList<>();

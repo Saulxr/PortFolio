@@ -1,7 +1,5 @@
 package Controllers;
 
-import java.util.ArrayList;
-
 import Module.CardModel;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -28,60 +26,27 @@ public class CardVerticalController {
     // private String  Prodpath;
     // private String Prodprice;
 
-    private MainSceneController mainSceneController;
+    private MainSceneController x;
 
     public void setMainSceneController(MainSceneController mainSceneController) {
-        this.mainSceneController = mainSceneController;
+        this.x = mainSceneController;
     }
 
     @FXML
     void click(MouseEvent event) {
-        MainSceneController v = mainSceneController;
+        MainSceneController v = x;
         
         CardModel model1 = new CardModel();
         model1.setProduct_Name(cardModel.getProduct_Name());
         model1.setProduct_Img(cardModel.getProduct_Img());
         model1.setProduct_Price(cardModel.getProduct_Price());
-    
-        v.setChosenProd(model1);
+        //If I were to cal it here no error
+    //   v.naG();
+       v.setChosenProd(model1);
     }
     
 
-    // @FXML
-    // void click(MouseEvent event) {
-        
-    //     // System.out.println(cardModel.getProduct_Name());
-    //     // System.out.println(cardModel.getProduct_Img());
-    //     // System.out.println("Yip");
-
-    //     // Prodpath= cardModel.getProduct_Img();
-    //     // Prodname = cardModel.getProduct_Name();
-    //     // Prodprice =cardModel.getProduct_Price();
-
-            
-    //     // System.out.println(Prodname);
-    //     // System.out.println(Prodpath);
-    //     // System.out.println(Prodprice);
-
-    //     CardModel model1 = new CardModel();
-    //     model1.setProduct_Name(cardModel.getProduct_Name());
-    //     model1.setProduct_Img(cardModel.getProduct_Img());
-    //     model1.setProduct_Price(cardModel.getProduct_Price());
-
-    //     //System.out.println(model1);
-
-
-    //     MainSceneController v  = new MainSceneController();
-        
-    //     v.recentlyViewed = new ArrayList<>(v.recentlyViewed()); // Initialize the list first
-
-    //     v.recentlyViewed.add(model1);
-    //     //System.out.println(v.recentlyViewed);
-    //     //v.setChosenProd();
-
-
-    // }
-  
+   
 
     private CardModel cardModel;
 

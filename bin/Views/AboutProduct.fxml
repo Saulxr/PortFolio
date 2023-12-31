@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import de.jensd.fx.glyphs.fontawesome.FontAwesomeIconView?>
+<?import javafx.geometry.Insets?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.Separator?>
+<?import javafx.scene.control.TextArea?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+<?import javafx.scene.text.Font?>
+
+
+<VBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="463.0" prefWidth="600.0" styleClass="center-stage" stylesheets="@Css/MainScene.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
+   <children>
+      <AnchorPane prefHeight="130.0" prefWidth="600.0">
+         <children>
+            <HBox accessibleRole="BUTTON" alignment="CENTER" focusTraversable="true" layoutX="21.5" layoutY="12.5" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0" prefWidth="50.0" styleClass="my-icon-container" stylesheets="@Css/MainScene.css">
+               <children>
+                  <FontAwesomeIconView id="hub" glyphName="ARROW_LEFT" styleClass="top-right-icons" text="" />
+               </children>
+               <opaqueInsets>
+                  <Insets />
+               </opaqueInsets>
+            </HBox>
+            <HBox layoutX="180.0" layoutY="13.0" prefHeight="100.0" prefWidth="200.0">
+               <children>
+                  <HBox fx:id="Target" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="150.0" prefWidth="250.0" />
+               </children>
+            </HBox>
+         </children>
+      </AnchorPane>
+      <HBox prefHeight="163.0" prefWidth="600.0">
+         <children>
+            <TextArea nodeOrientation="LEFT_TO_RIGHT" prefHeight="109.0" prefWidth="599.0" text="Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum." wrapText="true">
+               <HBox.margin>
+                  <Insets left="20.0" />
+               </HBox.margin>
+            </TextArea>
+         </children>
+      </HBox>
+      <VBox prefHeight="218.0" prefWidth="600.0">
+         <children>
+            <HBox maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="218.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="69.0" text="Quantity">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets left="8.0" />
+                     </padding>
+                  </Label>
+                  <ChoiceBox prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets top="9.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="10.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="218.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="69.0" text="Colour">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets left="8.0" />
+                     </padding>
+                  </Label>
+                  <ChoiceBox prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets top="9.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+            <HBox layoutX="10.0" layoutY="54.0" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="44.0" prefWidth="218.0">
+               <children>
+                  <Label prefHeight="40.0" prefWidth="69.0" text="Size">
+                     <font>
+                        <Font name="Arial Bold" size="12.0" />
+                     </font>
+                     <padding>
+                        <Insets left="8.0" />
+                     </padding>
+                  </Label>
+                  <ChoiceBox prefWidth="150.0">
+                     <HBox.margin>
+                        <Insets top="9.0" />
+                     </HBox.margin>
+                  </ChoiceBox>
+               </children>
+               <VBox.margin>
+                  <Insets left="20.0" />
+               </VBox.margin>
+            </HBox>
+         </children>
+      </VBox>
+      <VBox prefHeight="200.0" prefWidth="100.0">
+         <children>
+            <Label prefHeight="24.0" prefWidth="100.0" text="Comments">
+               <padding>
+                  <Insets left="7.0" />
+               </padding>
+               <VBox.margin>
+                  <Insets left="25.0" />
+               </VBox.margin>
+            </Label>
+            <Separator maxWidth="-Infinity" prefHeight="15.0" prefWidth="316.0" />
+            <FontAwesomeIconView glyphName="USER_CIRCLE" size="16" wrappingWidth="20.0">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </FontAwesomeIconView>
+            <TextArea maxHeight="-Infinity" maxWidth="-Infinity" prefHeight="48.0" prefWidth="200.0" text="User53:&#10;It's Okay. ">
+               <VBox.margin>
+                  <Insets left="28.0" />
+               </VBox.margin>
+            </TextArea>
+            <Separator maxWidth="-Infinity" prefHeight="13.0" prefWidth="200.0" />
+            <FontAwesomeIconView glyphName="USER_CIRCLE" size="16" wrappingWidth="20.0">
+               <VBox.margin>
+                  <Insets left="5.0" />
+               </VBox.margin>
+            </FontAwesomeIconView>
+            <TextArea maxWidth="-Infinity" prefHeight="48.0" prefWidth="200.0" text="dell65:&#10;Could be better">
+               <VBox.margin>
+                  <Insets left="28.0" />
+               </VBox.margin>
+            </TextArea>
+         </children>
+      </VBox>
+   </children>
+</VBox>

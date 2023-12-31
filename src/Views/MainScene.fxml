@@ -17,9 +17,9 @@
 <?import javafx.scene.shape.SVGPath?>
 <?import javafx.scene.text.Font?>
 
-<BorderPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="980.0" styleClass="white-background" stylesheets="@Css/MainScene.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainSceneController">
+<BorderPane fx:id="mainBorderPane" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="690.0" prefWidth="980.0" styleClass="white-background" stylesheets="@Css/MainScene.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainSceneController">
    <left>
-      <AnchorPane prefHeight="635.0" prefWidth="47.0" styleClass="white-background" stylesheets="@Css/MainScene.css" BorderPane.alignment="CENTER">
+      <AnchorPane fx:id="tert" prefHeight="635.0" prefWidth="47.0" styleClass="white-background" stylesheets="@Css/MainScene.css" BorderPane.alignment="CENTER">
          <children>
             <VBox layoutX="6.0" layoutY="192.0" prefHeight="200.0" prefWidth="62.0" spacing="20.0" styleClass="white-background" stylesheets="@Css/MainScene.css" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="2.0">
                <children>
