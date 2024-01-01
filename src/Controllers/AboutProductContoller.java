@@ -1,14 +1,16 @@
 package Controllers;
 
+import java.lang.annotation.Target;
+
 import Module.CardModel;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
 import javafx.scene.image.Image;
 import javafx.scene.image.ImageView;
 import javafx.scene.input.MouseEvent;
-import javafx.scene.layout.VBox;
+import javafx.scene.layout.HBox;
 
-public class CardVerticalController {
+public class AboutProductContoller {
 
     @FXML
     private ImageView Product_Img;
@@ -20,30 +22,31 @@ public class CardVerticalController {
     private Label Product_Price;
 
     @FXML
-    private VBox box2;
+    private HBox Target;
 
-    private CardModel cardModel;
+    @FXML
+    private HBox backbtn;
 
     private Main2Controller x;
+
+    private CardModel cardModel;
 
     public void setMainSceneController(Main2Controller main2Controller) {
         this.x = main2Controller;
     }
 
     @FXML
-    void click(MouseEvent event) {
+    void back(MouseEvent event) {
         Main2Controller v = x;
-        
-        CardModel model1 = new CardModel();
-        model1.setProduct_Name(cardModel.getProduct_Name());
-        model1.setProduct_Img(cardModel.getProduct_Img());
-        model1.setProduct_Price(cardModel.getProduct_Price());
-  
-       v.setChosenProd(model1);
-    }
-    
+        // CardModel model1 = new CardModel();
+        // model1.setProduct_Name(cardModel.getProduct_Name());
+        // model1.setProduct_Img(cardModel.getProduct_Img());
+        // model1.setProduct_Price(cardModel.getProduct_Price());
+        v.back();
 
-   public void setProd(CardModel cardModel){
+    }
+
+    public void setProd(CardModel cardModel){
         
         this.cardModel = cardModel;
 
@@ -53,5 +56,6 @@ public class CardVerticalController {
         Product_Price.setText(cardModel.getProduct_Price());
           
     }
+
 
 }

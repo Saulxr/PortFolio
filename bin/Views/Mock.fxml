@@ -12,11 +12,11 @@
 <?import javafx.scene.layout.VBox?>
 <?import javafx.scene.text.Font?>
 
-<HBox prefHeight="400.0" prefWidth="684.0" styleClass="center-stage" stylesheets="@Css/MainScene.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AboutProductContoller">
+<HBox prefHeight="400.0" prefWidth="684.0" styleClass="center-stage" stylesheets="@Css/MainScene.css" xmlns="http://javafx.com/javafx/21" xmlns:fx="http://javafx.com/fxml/1">
    <children>
       <VBox minWidth="-Infinity" prefHeight="400.0" prefWidth="406.0" spacing="20.0">
          <children>
-            <HBox fx:id="backbtn" accessibleRole="BUTTON" alignment="CENTER" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" onMousePressed="#back" prefHeight="41.0" prefWidth="50.0" styleClass="my-icon-container" stylesheets="@Css/MainScene.css">
+            <HBox fx:id="backbtn" accessibleRole="BUTTON" alignment="CENTER" focusTraversable="true" maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="41.0" prefWidth="50.0" styleClass="my-icon-container" stylesheets="@Css/MainScene.css">
                <children>
                   <FontAwesomeIconView id="hub" glyphName="ARROW_LEFT" styleClass="top-right-icons" text="" />
                </children>
