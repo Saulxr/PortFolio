@@ -34,17 +34,26 @@ public class Main2Controller implements Initializable {
 
     //
     @FXML
-    void disableFocus(MouseEvent event) {
-        
-    this.Scroll_P.getParent().requestFocus();
+    void setFocusOnScrollP(MouseEvent event) {
+        Scroll_P.requestFocus();
     }
 
     @FXML
-    void setFocuse(MouseEvent event) {
-       this.Scroll_P.requestFocus();
+    void setFocusOnScrollp(MouseEvent event) {
+        Scrollp.requestFocus();
     }
 
-    //Basic Variables
+    @FXML
+    void clearFocusOnScrollP(MouseEvent event) {
+        Scroll_P.getParent().requestFocus();
+    }
+
+    @FXML
+    void clearFocusOnScrollp(MouseEvent event) {
+        Scrollp.getParent().requestFocus();
+    }
+
+   
      public List<CardModel> recentlyViewed;
     private List<CardModel> recommandedCardModels;
 
@@ -76,7 +85,6 @@ public void setChosenProd(CardModel clickedModel) {
             VBox cardBox;
             try {
                 cardBox = fxmlLoader.load();
-                //cardBox.getStyleClass().add("card-box");
                 CardController cardController = fxmlLoader.getController();
                 cardController.setMainSceneController(this); // Pass reference to MainSceneController
                 cardController.setProd(model);
@@ -96,49 +104,32 @@ public void setChosenProd(CardModel clickedModel) {
             MainSceneController v = x;
             Parent root = (HBox) loader.load();   
             AboutProductContoller cardController = loader.getController();
-             cardController.setProd(clickedModel); 
-            // Ensure mainBorderPane is not null
+            cardController.setProd(clickedModel); 
             AboutProductContoller abouController = loader.getController();
             abouController.setMainSceneController(this); // Pass reference to MainSceneController
             v.mainBorderPane.setCenter(root);
-            System.out.println("Center set to AboutProduct.fxml");
             } 
          catch (IOException e) {
             e.printStackTrace();
-        }
+        }           
 }
+
     
     public void back() {
-        
+      
         MainSceneController t = x;
         t.initialize(null, null);
+        Scroll_P.requestFocus();
 
-        //      FXMLLoader loader = new FXMLLoader(getClass().getResource("/Views/Main2.fxml"));
-        // try {
-        //     Parent root =  loader.load();    
-        //     // Ensure mainBorderPane is not null
-                        
-        //        MainSceneController v = x;               
-        //        v.mainBorderPane.setCenter(root);
-        //         System.out.println("Center set to AboutProduct.fxml");
-            
-        //         System.out.println("mainBorderPane is null");
-        //          } 
-        //          catch (IOException e) {
-        //     e.printStackTrace();
-        // }
     }
 
-    // private MainSceneController x;
-
-    // private void setMainSceneController(MainSceneController mainSceneController) {
-    //     this.x = mainSceneController;
-    // }
-
+    
 
 
     @Override
     public void initialize(URL arg0, ResourceBundle arg1) {
+
+        
 
        
        recentlyViewed = new ArrayList<>(recentlyViewed()); // Initialize the list first
@@ -157,7 +148,6 @@ public void setChosenProd(CardModel clickedModel) {
                 prodBox.getStyleClass().add("card-box");
                 CardVerticalController cardVController = fxmlLoader.getController();
                 cardVController.setMainSceneController(this); // Pass reference to MainSceneController
-                //System.out.println(recommanded);
                 cardVController.setProd(recommanded);
     
                 if (column == 7) {
@@ -180,11 +170,6 @@ public void setChosenProd(CardModel clickedModel) {
 
     public List<CardModel> recentlyViewed() {
         List<CardModel> ls = new ArrayList<>();
-        CardModel model1 = new CardModel();
-        model1.setProduct_Name("Dr Martins");
-        model1.setProduct_Img("/Views/Img/n.png");
-        model1.setProduct_Price("N$1300");
-        ls.add(model1);
         return ls;
         
     }
@@ -193,7 +178,7 @@ public void setChosenProd(CardModel clickedModel) {
 
         List<CardModel> ls = new ArrayList<>();
         CardModel model1 = new CardModel();
-        model1.setProduct_Name("Dr Martins");
+        model1.setProduct_Name("Doc Martins");
         model1.setProduct_Img("/Views/Img/n.png");
         model1.setProduct_Price("N$1300");
         ls.add(model1);
@@ -227,13 +212,13 @@ public void setChosenProd(CardModel clickedModel) {
         model1 = new CardModel();
         model1.setProduct_Name("Gaming PC");
         model1.setProduct_Img("/Views/Img/GamingHub.png");
-        model1.setProduct_Price("N$300");
+        model1.setProduct_Price("N$5000");
         ls.add(model1);
 
         model1 = new CardModel();
         model1.setProduct_Name("Keyboard");
         model1.setProduct_Img("/Views/Img/Keyboard.png");
-        model1.setProduct_Price("N$5000");
+        model1.setProduct_Price("N$300");
         ls.add(model1);
 
         
@@ -259,19 +244,19 @@ public void setChosenProd(CardModel clickedModel) {
         model1 = new CardModel();
         model1.setProduct_Name("Laptop Stand");
         model1.setProduct_Img("/Views/Img/LaptopStand.png");
-        model1.setProduct_Price("N$8000");
+        model1.setProduct_Price("N$1000");
         ls.add(model1);
          
         model1 = new CardModel();
         model1.setProduct_Name("Monitor");
         model1.setProduct_Img("/Views/Img/Monitor.png");
-        model1.setProduct_Price("N$150");
+        model1.setProduct_Price("N$6000");
         ls.add(model1);   
         
         model1 = new CardModel();
-        model1.setProduct_Name("Laptop");
-        model1.setProduct_Img("/Views/Img/Laptop.png");
-        model1.setProduct_Price("N$8000");
+        model1.setProduct_Name("AIR BUDS");
+        model1.setProduct_Img("/Views/Img/earbuds.png");
+        model1.setProduct_Price("N$1000");
         ls.add(model1);
          
         model1 = new CardModel();
@@ -314,8 +299,8 @@ public void setChosenProd(CardModel clickedModel) {
          
 
         model1 = new CardModel();
-        model1.setProduct_Name("Laptop");
-        model1.setProduct_Img("/Views/Img/Laptop.png");
+        model1.setProduct_Name("Lightning Cable");
+        model1.setProduct_Img("/Views/Img/iphonecable.png");
         model1.setProduct_Price("N$8000");
         ls.add(model1);
          

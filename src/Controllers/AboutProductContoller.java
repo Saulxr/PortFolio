@@ -1,7 +1,5 @@
 package Controllers;
 
-import java.lang.annotation.Target;
-
 import Module.CardModel;
 import javafx.fxml.FXML;
 import javafx.scene.control.Label;
@@ -29,8 +27,6 @@ public class AboutProductContoller {
 
     private Main2Controller x;
 
-    private CardModel cardModel;
-
     public void setMainSceneController(Main2Controller main2Controller) {
         this.x = main2Controller;
     }
@@ -48,8 +44,6 @@ public class AboutProductContoller {
 
     public void setProd(CardModel cardModel){
         
-        this.cardModel = cardModel;
-
         Image pImage= new Image(getClass().getResourceAsStream(cardModel.getProduct_Img()));
         Product_Img.setImage(pImage);
         Product_Name.setText(cardModel.getProduct_Name());

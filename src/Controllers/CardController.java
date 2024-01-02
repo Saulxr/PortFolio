@@ -33,7 +33,6 @@ public class CardController {
     @FXML
     void click2(MouseEvent event) {
         Main2Controller v = x;
-        System.out.println("HUHHHHHHHHHHHH");
         CardModel model1 = new CardModel();
         model1.setProduct_Name(cardModel.getProduct_Name());
         model1.setProduct_Img(cardModel.getProduct_Img());

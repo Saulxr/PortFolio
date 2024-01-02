@@ -1,4 +1,4 @@
-
+/*General Purpose Ones*/
 .white-background {
     -fx-background-color: white;
 }
@@ -6,21 +6,7 @@
 .gray-background {
     -fx-background-color: rgb(236, 234, 234);
 
-}
 
-
-.center-stage {
-    -fx-background-color: rgb(236, 234, 234);
-    -fx-background-radius: 50 0 0 50;
-
-}
-
-
-#nn {
- 
-    -fx-fill: transparent;
-    -fx-border-color:transparent;
-    
 }
 
 .transparent {
@@ -31,66 +17,45 @@
 }
 
 
+/*General Purpose Ones*/
+
+/* Main Scene*/
+.center-stage {
+    -fx-background-color: rgb(236, 234, 234);
+    -fx-background-radius: 50 0 0 50;
+
+}
 
 .round-layout-search-bar {
     -fx-border-radius: 50;
     -fx-border-color: #D7D7D7;
 }
 
+/* Main Scene*/
 
-.house-button {
-    -fx-background-color: transparent;
-    -fx-background-insets: 0;
-    
+
+
+/* BUY BUTTONS*/
+.round-button {
+    -fx-background-color: rgb(245, 242, 242);/*rgba(182, 162, 162, 0.37)*/
+    -fx-border-radius: 20;
+    -fx-border-color: rgb(196, 186, 186);
+    -fx-text-fill: black; /* White text color */
+    -fx-background-radius: 20; /* Set the radius for rounded corners */
 }
 
-.house-button:hover {
-    -fx-background-color:green;
-    -fx-effect: dropshadow(three-pass-box, #333, 0, 0, 0, 0);
+.round-button:hover {
+    -fx-background-color: rgba(218, 164, 63, 0.26);
 }
 
-.house-button:pressed {
-    -fx-background-color: red; /* Change the color on press */
-    -fx-effect: innershadow(gaussian, #222, 10, 0, 0, 0); /* Add an inner shadow on press */
+.round-button:pressed {
+    -fx-background-color: rgb(204, 151, 151)(121, 48, 48); /* Red background color with a slight change on hover */
+     -fx-effect: dropshadow(three-pass-box, #333, 0, 0, 0, 0); /* Add a red drop shadow on hover */
 }
 
-
-.img-viewer {
-    -fx-border-size: 10px;
- -fx-border-radius: 50px;
-
-}
+/* BUY BUTTONS*/
 
 
-
-
-
-
-#myImageView {
-    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.2), 10, 0, 0, 0); /* Shadow effect on hover */
-}
-
-#myImageView:hover {
-    -fx-opacity: 0.8; /* Adjust opacity on hover */
-}
-
-#myImageView:pressed {
-    -fx-opacity: 0.6; /* Adjust opacity on click */
-    -fx-effect: dropshadow(gaussian, rgba(0, 0, 0, 0.5), 10, 0, 0, 0); /* Shadow effect on click */
-}
-
-
-.my-icon:hover {
-    -fx-fill: #00ffbf3d; /* Blue color example on hover */
-    -fx-stroke: #302f2f; /* Highlight border color */
-}
-
-  
-
-  .my-icon:pressed {
-    -fx-fill: rgb(255, 255, 255); /* Blue color example */
-    -fx-stroke: #000000; /* Highlight border color */
-  }
 
 
 /* THREE BUTTONS ON THE SIDE */
@@ -147,7 +112,6 @@
   }
 
 
-/**/
 .top-right-icons {
     -fx-fill: rgb(255, 255, 255); /* Default fill color */
     -fx-stroke: rgba(102, 67, 14, 0.952); /* Default border color */
@@ -155,61 +119,6 @@
 }
   
 /* THREE BUTTONS ON THE TOP RIGHT */
-
-.mySvg {
-    -fx-stroke: #c38484; /* Stroke color */
-    -fx-stroke-width: 1; /* Stroke width (adjust the value as needed) */
-}
-
-
-#svgContainer:hover #yourSvgId {
-    -fx-fill: #00ffbf3d; /* Blue color example on hover */
-    -fx-stroke: #2d977d3d; /* Highlight border color */
-    -fx-stroke-width: 1;
-}
-
-#svgContainer:pressed #yourSvgId {
-    -fx-fill: black; /* Blue color example */
-    -fx-stroke: rgba(130, 194, 70, 0.527); 
-    -fx-stroke-width: 1.5; 
-  
-}
-
-
-/* 
-#HboxBtnSide:hover #iconBtn {
-    -fx-fill: #00ffbf3d; 
-    -fx-stroke: #302f2f; 
-} */
-
-/*animaion*/
-
-
-.fire-icon {
-    -fx-fill: black;
-}
-
-.fire-icon-hover {
-    -fx-fill: firebrick;
-}
-
-/*animaion*/
-
-#HboxBtnSide:pressed #iconBtn {
-    -fx-fill: rgb(255, 255, 255); /* Blue color example */
-    -fx-stroke: #000000; /* Highlight border color */
-}
-
-
-.cartIcon {
-    -fx-fill: #007bff; /* Blue color for the icon */
-    -fx-size: 24px; /* Adjust the size as needed */
-}
-
-.cartIcon:hover {
-    -fx-fill: #0056b3; /* Darker blue color on hover */
-}
-
 
 /* Card_Item_Style */
 
