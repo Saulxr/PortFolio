@@ -301,7 +301,7 @@ public void setChosenProd(CardModel clickedModel) {
         model1 = new CardModel();
         model1.setProduct_Name("Lightning Cable");
         model1.setProduct_Img("/Views/Img/iphonecable.png");
-        model1.setProduct_Price("N$8000");
+        model1.setProduct_Price("N$300");
         ls.add(model1);
          
         model1 = new CardModel();
